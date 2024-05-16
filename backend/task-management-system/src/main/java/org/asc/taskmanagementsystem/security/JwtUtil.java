@@ -10,7 +10,7 @@ import java.util.Date;
 @Component
 public class JwtUtil {
     private final String secret = "secret";
-    private long expiration = 604800000L; //1 week
+    private final long expiration = 604800000L; //1 week
 
     public String generateToken(String username){
         return Jwts.builder()
